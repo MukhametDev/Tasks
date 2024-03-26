@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <style>
+        body {
+            background-color: #87CEEB;
+        }
+
+        #house {
+            border-radius: 5px 5px 0 0;
+            width: 300px;
+            height: 200px;
+            background-color: #8B4513;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #roof {
+            z-index: 100;
+            width: 0;
+            height: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 100px solid #A52A2A;
+            position: absolute;
+            top: -24%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #window {
+            width: 50px;
+            height: 50px;
+            background-color: #e6d731;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #chimney {
+            z-index: -1;
+            width: 30px;
+            height: 70px;
+            background-color: #000000;
+            position: absolute;
+            top: -30%;
+            left: 80%;
+            transform: translate(-40%, -50%);
+        }
+
+        #line_1 {
+            width: 3px;
+            height: 50px;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #line_2 {
+            width: 50px;
+            height: 3px;
+            background-color: #000000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="house">
+        <div id="roof"></div>
+        <div id="window">
+            <div id="line_1"></div>
+            <div id="line_2"></div>
+        </div>
+        <div id="chimney"></div>
+    </div>
+
+
+</body>
+
+</html>
